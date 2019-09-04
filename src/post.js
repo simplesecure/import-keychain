@@ -8,7 +8,7 @@ export function importKeychain(dataString) {
   } else {
     dataString.isEncrypted = true;
   }
-  const options = { url: "https://i7sev8z82g.execute-api.us-west-2.amazonaws.com/dev/importKeychain", method: 'POST', headers: headers, form: dataString };
+  const options = { url: "https://api.simpleid.xyz/importKeychain", method: 'POST', headers: headers, form: dataString };
   return request(options)
   .then(async (body) => {
     // POST succeeded...
