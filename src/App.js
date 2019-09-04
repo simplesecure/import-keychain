@@ -98,7 +98,7 @@ class App extends React.Component {
                     <label htmlFor="email">Email</label>
                   </div>
                   <div className="group">
-                    <input type="text" onChange={this.handleMnemonic} value={mnemonic} id="mnemonic" /><span className="highlight"></span><span className="bar"></span>
+                    <input autoComplete="false" type="text" onChange={this.handleMnemonic} value={mnemonic} id="mnemonic" /><span className="highlight"></span><span className="bar"></span>
                     <label htmlFor="mnemonic">Seed Phrase or Key</label>
                   </div>
                   <button type="submit" className="button buttonBlue">Import
